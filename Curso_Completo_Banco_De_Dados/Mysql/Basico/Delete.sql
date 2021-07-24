@@ -1,0 +1,19 @@
+-- NAO FACA
+DELETE FROM cliente;
+
+-- Seleciona a linha a deletar
+DELETE FROM cliente
+WHERE NOME = 'ANA';
+
+-- Insert
+INSERT INTO cliente VALUES('CARLA', 'F', 'C.LOPES@OUTLOOK>COM', 63437242, '7353-7453', 'RUA COPPER LEAF - WILLIANBURG - CA');
+
+-- usando com OR 
+DELETE FROM cliente WHERE 
+NOME = 'CARLA'
+OR EMAIL = 'LILIAN@HOTMAIL.COM';
+
+-- usando com AND 
+DELETE FROM cliente WHERE 
+NOME = 'CARLA'
+AND EMAIL = 'LILIAN@HOTMAIL.COM';

@@ -1,0 +1,11 @@
+SELECT NOME, EMAIL
+FROM cliente;
+
+-- NAO FAÇA NUNCA
+UPDATE cliente
+SET EMAIL = 'LILIAN@HOTMAIL.COM';
+
+-- Update sempre usa se
+UPDATE cliente
+SET EMAIL = 'GEORGE@IG.COM'
+WHERE NOME = 'GORGE';

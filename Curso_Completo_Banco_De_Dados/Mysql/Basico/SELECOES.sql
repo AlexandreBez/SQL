@@ -1,0 +1,15 @@
+-- filtrando dados com where e LIKE 
+SELECT  NOME, TELEFONE FROM cliente;
+
+-- filtrando
+SELECT NOME, SEXO FROM cliente WHERE SEXO = 'M';
+SELECT NOME, SEXO FROM cliente WHERE SEXO = 'F';
+SELECT NOME, SEXO FROM cliente WHERE ENDERECO = 'RJ'; 
+
+-- utilizando LIKE 
+SELECT NOME, SEXO FROM cliente WHERE ENDERECO LIKE 'RJ';
+
+-- caracter coringa
+
+SELECT NOME, CPF WHERE ENDERECO LIKE '%RJ%';
+SELECT NOME, CPF WHERE ENDERECO LIKE '%_____RJ%__';
